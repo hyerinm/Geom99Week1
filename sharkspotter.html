@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shark Spotter</title>
+<style type="text/css">
+
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: tomato;
+        padding: 2px;
+        margin: 20px;
+    }
+
+    h4, p {
+        color: ghostwhite;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h6 {
+        color: whitesmoke;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+        background-color: lightseagreen;
+        overflow: hidden;
+        font-size: large;
+        border-radius: 2px;
+
+    }
+    
+    /* Source: https://www.w3schools.com/cssref/tryit.asp?filename=trycss_dim_min-height*/
+    .page {
+        display: block;
+        position: relative;
+        min-height: 100px;
+    }
+    .content {
+        float: left;
+        width: 40%;
+        padding: 2px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 25px;
+    }
+
+    body,html {
+        height: 100%;
+        background-image: url("images/Shark_Silhouette.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
+
+    .footer {
+        background-color: lightseagreen;
+        text-align: center;
+        width: 100%;
+        height: 8%;
+        border-radius: 2px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        bottom: 0;
+
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Shark Spotter: False Bay Coastline</h1>
+    </header>
+    <div class="page">
+        <div class="content">
+            <h4>Welcome to the Shark Spotter webpage!</h4>
+            <p>This map shows the location of Shark Spotters along the False Bay coastline in South Africa, 
+            as well as all reported white shark sightings between September 8, 2012, and February 22, 2013. 
+            Shark Spotters are positioned at strategic points along the Cape Peninsula. A spotter is placed 
+            on the mountain with polarised sunglasses and binoculars. This spotter is in radio contact with 
+            another spotter on the beach. If a shark is seen along the beach, the spotter sounds a siren and 
+            raises a specific color-coded flag, upon which swimmers are requested to leave the water.</p>
+        </div>
+        <div class="content">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1s3-ZnIjWigbVjRxMgE-bKNc1cDqcHu2V" width="640" height="480"></iframe>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h6>Source: Google MyMaps Tutorial. Learn how by clicking on the link below:
+        <a href="https://www.google.com/earth/outreach/learn/visualize-your-data-on-a-custom-map-using-google-my-maps/">Click Here</a></h6>
+    </div>
+    
+</body>
+</html>
