@@ -18,16 +18,16 @@
     <script>
       // Initialize and add the map
       function initMap() {
-        // The location of cntower
-        const cntower = { lat: 43.64257613972237, lng: -79.38708761028415 };
-        // The map, centered at CN Tower
+        // The location of University of Saskatchewan
+        const uofsask = { lat: 52.13336227487766, lng: -106.63126161209843 };
+        // The map, centered at University of Saskatchewan
         const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 17,
-          center: cntower,
+          center: uofsask,
         });
         // The marker, positioned at CN Tower
         const marker = new google.maps.Marker({
-          position: cntower,
+          position: uofsask,
           map: map,
         });
       }
