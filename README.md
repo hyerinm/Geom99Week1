@@ -1,4 +1,4 @@
-Google Maps
+Google Maps API
 ============
 
 ## Directions API (JSON Return)
