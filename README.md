@@ -361,5 +361,5 @@ https://maps.googleapis.com/maps/api/directions/json?origin=Toronto+Pearson+Inte
 </pre>
 
 ###### Source:
-Find unique place id in the Google Places database and on Google Maps
+Find unique place id in the Google Places database and on Google Maps: 
 https://developers.google.com/places/web-service/place-id
