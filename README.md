@@ -9,6 +9,8 @@ https://maps.googleapis.com/maps/api/directions/json?origin=Toronto+Pearson+Inte
 
 
 #### Result:
+<pre>
+<code>
 {
    "geocoded_waypoints" : [
       {
@@ -333,3 +335,5 @@ https://maps.googleapis.com/maps/api/directions/json?origin=Toronto+Pearson+Inte
    ],
    "status" : "OK"
 }
+</code>
+</pre>
