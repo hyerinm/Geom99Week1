@@ -337,3 +337,20 @@ https://maps.googleapis.com/maps/api/directions/json?origin=Toronto+Pearson+Inte
 }
 </code>
 </pre>
+
+### Places API (JSON Return)
+<pre>
+<code>
+{
+   "html_attributions" : [],
+   "result" : {
+      "business_status" : "OPERATIONAL",
+      "name" : "Times Square",
+      "obfuscated_type" : [],
+      "rating" : 4.7,
+      "website" : "https://www.timessquarenyc.org/"
+   },
+   "status" : "OK"
+}
+</code>
+</pre>
