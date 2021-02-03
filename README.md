@@ -1,4 +1,4 @@
-Google Maps API
+Web GIS Development: Google Maps API
 ============
 
 ### Directions API (JSON Return)
