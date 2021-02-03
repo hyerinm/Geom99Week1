@@ -9,7 +9,7 @@
     <style type="text/css">
       /* Set the size of the div element that contains the map */
       #map {
-        height: 400px;
+        height: 100%;
         /* The height is 400 pixels */
         width: 100%;
         /* The width is the width of the web page */
@@ -18,16 +18,16 @@
     <script>
       // Initialize and add the map
       function initMap() {
-        // The location of Uluru
-        const uluru = { lat: -25.344, lng: 131.036 };
-        // The map, centered at Uluru
+        // The location of cntower
+        const cntower = { lat: 43.64257613972237, lng: -79.38708761028415 };
+        // The map, centered at CN Tower
         const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 4,
-          center: uluru,
+          zoom: 15,
+          center: cntower,
         });
-        // The marker, positioned at Uluru
+        // The marker, positioned at CN Tower
         const marker = new google.maps.Marker({
-          position: uluru,
+          position: cntower,
           map: map,
         });
       }
