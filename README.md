@@ -1,6 +1,9 @@
-Directions API (JSON Return)
-Googld API address JSON return that returns direction from Toronto Pearson International Airpot to CN Tower.
+#** Directions API (JSON Return)**
+
+### Googld API address JSON return that returns direction from Toronto Pearson International Airpot to CN Tower.
 https://maps.googleapis.com/maps/api/directions/json?origin=Toronto+Pearson+International+Airport&destination=CN+Tower&key=AIzaSyA5a1FoKmbmQ1djPh6pRx7oiknBf3ACNOE
+
+
 Result:
 {
    "geocoded_waypoints" : [
