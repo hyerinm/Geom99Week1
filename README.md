@@ -339,6 +339,11 @@ https://maps.googleapis.com/maps/api/directions/json?origin=Toronto+Pearson+Inte
 </pre>
 
 ### Places API (JSON Return)
+
+##### Googld API address JSON return that returns Times Square's business status, name, rating and website.
+https://maps.googleapis.com/maps/api/directions/json?origin=Toronto+Pearson+International+Airport&destination=CN+Tower&key=AIzaSyA5a1FoKmbmQ1djPh6pRx7oiknBf3ACNOE
+
+###### Result:
 <pre>
 <code>
 {
@@ -354,3 +359,7 @@ https://maps.googleapis.com/maps/api/directions/json?origin=Toronto+Pearson+Inte
 }
 </code>
 </pre>
+
+###### Source:
+Find unique place id in the Google Places database and on Google Maps
+https://developers.google.com/places/web-service/place-id
