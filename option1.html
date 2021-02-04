@@ -43,26 +43,20 @@
 
       ];
       
-        for(i = 0; i < locations.length; i++) {
-                var position = new google.maps.LatLng(locations[i][1], locations[i][2]);
-                    marker = new google.maps.Marker({
-                        position: position,
-                        map: map,
-                        title: locations[i][0],
-                        icon: 'cameramarker.png'
-                });
-                
-                var infoWindow = new google.maps.InfoWindow(), marker, i;
-                
-                
-                marker.addListener('click', (function(marker, i) {
-                    return function() {
-                        infoWindow.setContent(content_text[i][0]);
-                        infoWindow.open(map, marker);
-                    }
-                })(marker, i));
-            }
-        }
+      for (i = 0; i < locations.length; i++) {
+          const marker = new google.maps.Marker({
+            position: {lat: locations[i][2], lng: locations[i][3]},
+            icon: 'cameramarker.png',
+            map: mapVar,
+            title: locations[i][0],
+          });
+
+          // to open infowindow when markers are clicked
+          marker.addListener("click", () => {
+            infowindow.open(mapVar, marker);
+          });
+        };
+      }
         </script>
   </head>
   <body>
