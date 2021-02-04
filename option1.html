@@ -32,6 +32,10 @@
           mapTypeId: 'hybrid',
         });
 
+        var markercluster = new MarkerClusterer(map, markers, 
+            {imagePath: '../images/cameramarker.png'});
+      }
+
       const locations = [
         {lat: 49.910070103910016, lng: -97.23658901693946},
         {lat: 51.58554878466345, lng: -0.4891439261136681},
