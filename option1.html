@@ -3,6 +3,8 @@
   <head>
     <title>Tours in Europe </title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+    <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5a1FoKmbmQ1djPh6pRx7oiknBf3ACNOE&callback=initMap&libraries=&v=weekly"
       defer
@@ -27,16 +29,16 @@
         const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 8,
           center: { lat: 48.93419765201533, lng: 8.689967642556423 },
-          mapTypeId: "satellite",
+          mapTypeId: 'hybrid',
         });
 
-      var locations = [
-        ["Winnipeg James Armstrong Richardson International Airport", 49.910070103910016, -97.23658901693946],
-        ["Heathrow Airport",	51.58554878466345, -0.4891439261136681],
-        ["Aéroport de Paris-Charles de Gaulle",	49.01356786412916, 2.5494083302265484],
-        ["Flughafen Zürich",	47.46130046195648, 8.553433225327248],
-        ["Aeroporto internazionale Leonardo da Vinci",	41.80224031243568, 12.246155315152533],
-        ["Zračna luka Franjo Tuđman Zagreb",	45.86108514285162, 16.106946362301937],
+      const locations = [
+        {lat: 49.910070103910016, lng: -97.23658901693946},
+        {lat: 51.58554878466345, lng: -0.4891439261136681},
+        {lat: 49.01356786412916, lng: 2.5494083302265484},
+        {lat: 47.46130046195648, lng: 8.553433225327248},
+        {lat: 41.80224031243568, lng: 12.246155315152533},
+        {lat: 45.86108514285162, lng: 16.106946362301937},
 
       ];
     </script>
