@@ -34,16 +34,16 @@
         });
 
         var locations = [
-        ['Winnipeg James Armstrong Richardson International Airport', 49.910070103910016,  -97.23658901693946],
-        ['Heathrow Airport', 51.58554878466345, -0.4891439261136681], 
-        ['Aéroport de Paris-Charles de Gaulle', 49.01356786412916, 2.5494083302265484],
-        ['Flughafen Zürich', 47.46130046195648,  8.553433225327248],
-        ['Aeroporto internazionale Leonardo da Vinc', 41.80224031243568, 12.246155315152533],
-        ['Zračna luka Franjo Tuđman Zagreb', 45.86108514285162,  16.106946362301937]
+            ['Winnipeg James Armstrong Richardson International Airport', 49.910070103910016,  -97.23658901693946],
+            ['Heathrow Airport', 51.58554878466345, -0.4891439261136681], 
+            ['Aéroport de Paris-Charles de Gaulle', 49.01356786412916, 2.5494083302265484],
+            ['Flughafen Zürich', 47.46130046195648,  8.553433225327248],
+            ['Aeroporto internazionale Leonardo da Vinc', 41.80224031243568, 12.246155315152533],
+            ['Zračna luka Franjo Tuđman Zagreb', 45.86108514285162,  16.106946362301937]
 
       ];
       
-      for(i = 0; i < markers.length; i++) {
+        for(i = 0; i < markers.length; i++) {
                 var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
                     marker = new google.maps.Marker({
                         position: position,
