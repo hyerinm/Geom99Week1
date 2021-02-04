@@ -35,11 +35,7 @@
           mapTypeId: 'hybrid',
         });
 
-        var markercluster = new MarkerClusterer(map, markers, 
-            {imagePath: '../images/cameramarker.png'});
-      }
-
-      const locations = [
+        var locations = [
         {lat: 49.910070103910016, lng: -97.23658901693946},
         {lat: 51.58554878466345, lng: -0.4891439261136681},
         {lat: 49.01356786412916, lng: 2.5494083302265484},
@@ -48,7 +44,28 @@
         {lat: 45.86108514285162, lng: 16.106946362301937},
 
       ];
-    </script>
+      
+      for(i = 0; i < markers.length; i++) {
+                var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
+                    marker = new google.maps.Marker({
+                        position: position,
+                        map: map,
+                        title: markers[i][0],
+                        icon: 'cameramarker.png'
+                });
+                
+                var infoWindow = new google.maps.InfoWindow(), marker, i;
+                
+                
+                marker.addListener('click', (function(marker, i) {
+                    return function() {
+                        infoWindow.setContent(content_text[i][0]);
+                        infoWindow.open(map, marker);
+                    }
+                })(marker, i));
+            }
+        }
+        </script>
   </head>
   <body>
     <header>
