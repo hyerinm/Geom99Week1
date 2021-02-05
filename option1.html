@@ -54,7 +54,7 @@
             ['Zračna luka Franjo Tuđman Zagreb', 45.86108514285162,  16.106946362301937]
 
       ];
-        var flightPlanCoordinates = [
+        var latlng = [
             { lat: 49.910070103910016, lng: -97.23658901693946 },
             { lat: 51.58554878466345, lng: -0.4891439261136681 },
             { lat: 49.01356786412916, lng: 2.5494083302265484 },
@@ -63,8 +63,8 @@
             { lat: 45.86108514285162, lng:  16.106946362301937 },
         ];
 
-        const flightPath = new google.maps.Polyline({
-            path: flightPlanCoordinates,
+        const path  = new google.maps.Polyline({
+            path: latlng,
             geodesic: true,
             strokeColor: "#FF0000",
             strokeOpacity: 0,
@@ -78,9 +78,7 @@
           ],
         });
         
-        flightPath.setMap(mapVar);
-    
-
+        path.setMap(mapVar);
 
         const infoWindow = new google.maps.InfoWindow();
 
