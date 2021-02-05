@@ -40,7 +40,7 @@
       function initMap() {
         // The map, centered at 48.93419765201533, 8.689967642556423
         const mapVar = new google.maps.Map(document.getElementById("map"), {
-          zoom: 9,
+          zoom: 8,
           center: { lat: 48.93419765201533, lng: 8.689967642556423 },
           mapTypeId: 'hybrid',
         });
@@ -60,6 +60,8 @@
             { lat: 41.80224031243568, lng:  12.246155315152533 },
             { lat: 45.86108514285162, lng:  16.106946362301937 },
         ];
+
+
 
         const flightPath  = new google.maps.Polyline({
             path: flightPlanCoordinates,
