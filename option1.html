@@ -76,8 +76,6 @@
         
         flightPath.setMap(mapVar);
 
-        const infoWindow = new google.maps.InfoWindow();
-
         const image = "images/cameramarker.png";
 
         for (i = 0; i < locations.length; i++) {
@@ -88,13 +86,16 @@
             title: locations[i][0],
           });
 
+          const infoWindow = new google.maps.InfoWindow(), marker, i;
 
-          // to open infowindow when markers are clicked
-          marker.addListener("click", () => {
-            infowindow.open(mapVar, marker);
-          });
-        };
-      }
+          marker.addListener('click', (function(marker, i) {
+                    return function() {
+                        infoWindow.setContent(description[i][0]);
+                        infoWindow.open(mapVar, marker);
+                    }
+                })(marker, i));
+            }
+        }    
     </script>
   </head>
   <body>
