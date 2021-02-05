@@ -34,12 +34,31 @@
         font-size: 20px;
         font-family:'Courier New', Courier, monospace;
     }
-    .column {
-        float: left;
-        width: 50%;
-        padding: 10px;
-        height: 300px; /* Should be removed. Only for demonstration */
-        }
+      .column {
+	    float: left;
+	    width: 25%;
+	    padding: 10px;
+	    background-color: #DCDCDC;
+	    text-align: center;
+	    Height: 240px;
+}
+
+      .column2 {
+	    background-color: #1a1a1a;
+	    width: 75%;
+	    padding: 10px;
+	    text-align: center;
+	    height: 240px;
+	    color: white;	
+}
+    .footer {
+        background-color: slategray;
+        text-align: center;
+        padding: 2px;
+        color:white;
+        opacity: 0.4;
+        font-size: 14px;
+        }    
     </style>
     <script>          
       // Initialize and add the map
@@ -109,18 +128,17 @@
     <h4> Follow me! I will show you the beautiful places I've been in Europe in 2016!</h4>
     <div id="map"></div>
     <div class="row">
-        <div class="column" style="background-color:#aaa;">
-          <p><figure><img src="images/london.jpg" alt="london" style="width:350px;height:350px;"></figure></p>
-        </div>
         <div class="column" style="background-color:#bbb;">
-          <h2>Column 2</h2>
-          <p>Some text..</p>
+            <h2> London, England </h2>
+            <p><figure><img src="images/london.jpg" alt="london" style="width:350px;height:350px;"></figure></p>
         </div>
-      </div>
-    <div class="entry1">
-        <figure><img src="images/london.jpg" alt="london" style="width:350px;height:350px;"></figure>
-    </div>
-
-    
+        <div class="column2" style="background-color:#bbb;">
+          <h2>Paris, France </h2>
+          <p>Some text..</p>
+        </div> 
+        <div class="footer">
+            <p>Hyerin Mun. This site was made with reference to <a class="footerlink" href="https://www.w3schools.com/">W3 Schools</a> and
+            John duckett's book <a class="footerlink" href="https://www.wiley.com/en-ca/HTML+and+CSS%3A+Design+and+Build+Websites-p-9781118008188"> HTML & CSS </a></p>
+          </div>      
   </body>
 </html>
