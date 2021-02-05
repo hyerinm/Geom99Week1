@@ -91,7 +91,7 @@
           marker.addListener('click', (function(marker, i) {
                     return function() {
                         infoWindow.setContent(description[i][0]);
-                        infoWindow.open(mapVar, marker);
+                        infoWindow.open(map, marker);
                     }
                 })(marker, i));
             }
