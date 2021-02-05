@@ -60,7 +60,7 @@
             { lat: 41.80224031243568, lng:  12.246155315152533 },
             { lat: 45.86108514285162, lng:  16.106946362301937 },
         ];
-        var description = [
+        var infoWindowContent = [
             ['<img src = "images/london.jpg">'+ '<h5> London, England </h5>']
 
         ];
@@ -88,12 +88,13 @@
 
           const infoWindow = new google.maps.InfoWindow(), marker, i;
 
-          marker.addListener('click', (function(marker, i) {
-                return function() {
-                        infoWindow.setContent(description[i][0]);
-                        infoWindow.open(map, marker);
-                    }
-                })(marker, i));
+        // Add info window to marker    
+        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+            return function() {
+                infoWindow.setContent(infoWindowContent[i][0]);
+                infoWindow.open(map, marker);
+            }
+        })(marker, i));
             }
         }
     </script>
