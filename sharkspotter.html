@@ -10,18 +10,16 @@
                 color: #B5927F; 
                 background: rgb(226, 221, 169);    
             }
-            .column {
+            .column1 {
                 float: left;
                 width: 50%;
                 padding: 10px;
 
             }
-
-            /* Clear floats after the columns */
-            .row:after {
-                content: "";
-                display: table;
-                clear: both;
+            .column2{
+                float: right;
+                width: 50%;
+                padding: 10px;                
             }
             p{
 
@@ -41,17 +39,16 @@
     </head>
     <body>
         <h1> Shark Spotter along the False Bay coastline in South Africa </h1>
-        <div class="row">
-            <div class="column" >
+        <div class="column1" >
               <p>This map shows the location of Shark Spotters along the False Bay coastline in South Africa, 
                 as well as all reported white shark sightings between September 8, 2012, 
                 and February 22, 2013. Shark Spotters are positioned at strategic points along 
                 the Cape Peninsula. A spotter is placed on the mountain with polarised sunglasses and binoculars. 
                 This spotter is in radio contact with another spotter on the beach. 
                 If a shark is seen along the beach, the spotter sounds a siren and raises a specific color-coded flag, upon which swimmers are requested to leave the water.</p>
-            </div>
-            <div class="column">
-              <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1s3-ZnIjWigbVjRxMgE-bKNc1cDqcHu2V" ></iframe>
+        </div>
+        <div class="column2">
+              <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1s3-ZnIjWigbVjRxMgE-bKNc1cDqcHu2V" width="640" height="480"></iframe>
             </div>
 
         </div>
