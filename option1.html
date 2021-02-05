@@ -92,7 +92,7 @@
         google.maps.event.addListener(marker, 'click', (function(marker, i) {
             return function() {
                 infoWindow.setContent(infoWindowContent[i][0]);
-                infoWindow.open(mapVar, marker);
+                infoWindow.open(map, marker);
             }
         })(marker, i));
             }
