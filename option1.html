@@ -28,12 +28,24 @@
       // Initialize and add the map
       function initMap() {
         // The map, centered at 48.93419765201533, 8.689967642556423
-        const map = new google.maps.Map(document.getElementById("map"), {
+        const mapVar = new google.maps.Map(document.getElementById("map"), {
           zoom: 5,
           center: { lat: 48.93419765201533, lng: 8.689967642556423 },
           mapTypeId: 'hybrid',
         });
+
+        var locations = [
+            ['Winnipeg James Armstrong Richardson International Airport', 49.910070103910016,  -97.23658901693946],
+            ['Heathrow Airport', 51.58554878466345, -0.4891439261136681], 
+            ['Aéroport de Paris-Charles de Gaulle', 49.01356786412916, 2.5494083302265484],
+            ['Flughafen Zürich', 47.46130046195648,  8.553433225327248],
+            ['Aeroporto internazionale Leonardo da Vinc', 41.80224031243568, 12.246155315152533],
+            ['Zračna luka Franjo Tuđman Zagreb', 45.86108514285162,  16.106946362301937]
+
+      ];
+
         const infoWindow = new google.maps.InfoWindow();
+
         const image = "images/cameramarker.png";
 
         for (i = 0; i < locations.length; i++) {
@@ -43,15 +55,6 @@
             map: mapVar,
             title: locations[i][0],
           });
-        const locations = [
-            {
-                "title": 'Winnipeg James Armstrong Richardson International Airport',
-                "lat": 49.910070103910016,
-                "lng": -97.23658901693946
-            }
-        ];
-
-
 
 
           // to open infowindow when markers are clicked
