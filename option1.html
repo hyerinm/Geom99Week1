@@ -86,17 +86,16 @@
             title: locations[i][0],
           });
 
-          const infoWindow = new google.maps.InfoWindow(), marker, i;
+          const infowindow = new google.maps.InfoWindow({
+            content: `<h4>${locations[i][0]}</h4>`,
+          });
 
-        // Add info window to marker    
-        google.maps.event.addListener(marker, 'click', (function(marker, i) {
-            return function() {
-                infoWindow.setContent(infoWindowContent[i][0]);
-                infoWindow.open(map, marker);
-            }
-        })(marker, i));
-            }
-        }
+          // to open infowindow when markers are clicked
+          marker.addListener("click", () => {
+            infowindow.open(mapVar, marker);
+          });
+        };
+      }
     </script>
   </head>
   <body>
